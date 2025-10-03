@@ -1,13 +1,14 @@
 :root{
-    --primaryBackgroundColor: #007FFF;
-    --accentColor: #00FFFF;
-    --accentColorTwo: #00FA9A;
-    --accentColorThree: #32CD32;
-    --accentColorFour: #228B22;
+    --deepForestGreen: #3E5F45;
+    --skyBlue: #5FAAD1;
+    --stoneGrey: #8a8d8e;
+    --mossGreen: #7B9855;
+    --snowWhite: #F2F4F3;
+    --earthyBrown: #2B2B1F;
 }
 
 body{
-    background-color: var(--accentColorThree);
+    background-color: var(--deepForestGreen);
 }
 
 .cardContainer{
@@ -16,7 +17,7 @@ body{
 }
 
 .card{
-    background-color: var(--accentColorFour);
+    background-color: var(--mossGreen);
     height: 150px;
     width: 160px;
     border-radius: 15px;
@@ -28,4 +29,20 @@ img{
     height: 75%;
     width: 100%;
     border-radius: 15px;
+}
+
+h1, h2, p {
+    color: var(--earthyBrown);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: var(--earthyBrown);
+}
+
+a:visited{
+    color: var(--skyBlue);
 }
