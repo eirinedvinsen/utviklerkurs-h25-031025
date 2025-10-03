@@ -11,6 +11,35 @@ body{
     background-color: var(--deepForestGreen);
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 32px;
+    width: 32px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cardContainer{
     display: flex;
     justify-content: space-evenly;
@@ -18,8 +47,8 @@ body{
 
 .card{
     background-color: var(--mossGreen);
-    height: 150px;
-    width: 160px;
+    height: 400px;
+    width: 500px;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
