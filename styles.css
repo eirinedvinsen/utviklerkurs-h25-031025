@@ -19,6 +19,7 @@ body{
     background-color: var(--accentColorFour);
     height: 150px;
     width: 160px;
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -26,4 +27,5 @@ body{
 img{
     height: 75%;
     width: 100%;
+    border-radius: 15px;
 }
