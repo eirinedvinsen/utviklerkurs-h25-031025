@@ -1,0 +1,14 @@
+:root{
+    --primaryBackgroundColor: #007FFF;
+    --accentColor: #00FFFF;
+    --accentColorTwo: #00FA9A;
+    --accentColorThree: #32CD32;
+    --accentColorFour: #228B22;
+}
+
+.card{
+    background-color: var(--accentColorFour);
+    height: 150px;
+    width: 120px;
+    display: flex;
+}
