@@ -6,9 +6,24 @@
     --accentColorFour: #228B22;
 }
 
+body{
+    background-color: var(--accentColorThree);
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .card{
     background-color: var(--accentColorFour);
     height: 150px;
-    width: 120px;
+    width: 160px;
     display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    height: 75%;
+    width: 100%;
 }
