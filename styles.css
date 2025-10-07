@@ -50,8 +50,8 @@ header{
 
 .card{
     background-color: var(--mossGreen);
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
