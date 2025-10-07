@@ -21,6 +21,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .logo{
@@ -43,6 +44,7 @@ header{
 .cardContainer{
     display: flex;
     justify-content: space-evenly;
+    gap: 15px;
 }
 
 .card{
@@ -60,12 +62,14 @@ img{
     border-radius: 15px;
 }
 
-h1, h2, p {
+h1, h2, p, a {
     color: var(--earthyBrown);
+    font-family: roboto;
 }
 
 a{
     text-decoration: none;
+
 }
 
 a:link{
@@ -75,3 +79,5 @@ a:link{
 a:visited{
     color: var(--skyBlue);
 }
+
+
