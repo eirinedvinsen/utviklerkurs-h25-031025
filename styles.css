@@ -1,3 +1,8 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 :root{
     --deepForestGreen: #3E5F45;
     --skyBlue: #5FAAD1;
@@ -10,6 +15,8 @@
 body{
     background-color: var(--deepForestGreen);
 }
+
+
 
 header{
     display: flex;
@@ -27,6 +34,34 @@ header{
 .logo{
     height: 32px;
     width: 32px;
+}
+
+.parallax{
+   background-image: url("DSC06789.JPG");
+   height:  100vh; 
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 0;
+}
+
+.primaryHeader{
+    background-color: color-mix(in srgb, var(--deepForestGreen) 70%, transparent);
+    color: var(--earthyBrown);
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 50px;
+}
+
+.displayEnd{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 200px;
 }
 
 .info{
@@ -50,8 +85,8 @@ header{
 
 .card{
     background-color: var(--mossGreen);
-    height: 300px;
-    width: 400px;
+    height: 33%;
+    width: 33%;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -66,10 +101,10 @@ header{
 img{
     height: 75%;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 15px 15px 0px 0px;
 }
 
-h1, h2, p, a {
+h1, h2, p, a, li {
     color: var(--earthyBrown);
     font-family: roboto;
 }
