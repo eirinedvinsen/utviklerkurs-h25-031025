@@ -77,31 +77,78 @@ header{
     align-items: center;
 }
 
-.cardContainer{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
+.cardContainer {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: visible; /* lar pilene ligge utenfor bildet */
 }
 
-.card{
+/* 🎞️ Hver slide (ett bilde med tekst) */
+.slides {
+    display: none; /* alle skjules som standard */
+}
+
+/* 🖼️ Kortet som holder bildet og teksten */
+.card {
     background-color: var(--mossGreen);
-    height: 33%;
-    width: 33%;
     border-radius: 15px;
-    display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover{
-    transform: scale(1.1);
-    box-shadow: 0 10px 25px;
+/* 🖼️ Bildet i kortet */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    display: block;
 }
 
-img{
-    height: 75%;
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
+/* 💬 Tekst under bildet */
+.card p {
+    color: var(--snowWhite);
+    padding: 10px 15px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* ✨ Hover-effekt på kortet */
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ⬅️➡️ Piler (forrige/neste) */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px;
+    color: var(--earthyBrown);
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s ease;
+    border-radius: 50%;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Flytt pilene utenfor bildet */
+.prev {
+    left: -50px; /* juster avstand her */
+}
+
+.next {
+    right: -50px; /* juster avstand her */
+}
+
+/* Hover-effekt på piler */
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-50%) scale(1.1);
 }
 
 h1, h2, p, a, li {
